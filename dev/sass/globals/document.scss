@@ -1,0 +1,23 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font: $weight-primary $size-m $family-primary;
+	color: $color-base;
+	line-height: $line-height-body;
+	background-color: $color-grey-lightest;
+}
+
+.container {
+	width: $xs-container-width;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+.view-main {
+	width: 100%;
+	background-color: $color-white;
+}

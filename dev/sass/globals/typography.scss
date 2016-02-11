@@ -1,0 +1,38 @@
+h1,h2,h3,h5,h6 {
+    font-family: $family-secondary;
+    font-weight: $weight-secondary;
+    line-height: $line-height-headings;
+    margin-bottom: $spacing-m;
+}
+
+h1,.h1 {
+	font-size: 3em;
+}
+h2,.h2 {
+    font-size: 2.4em;
+}
+h3,.h3 {
+    font-size: 2.2em;
+}
+h4,.h4 {
+    font-size: 1.875em;
+}
+h5,.h5 {
+    font-size: 1.4em;
+}
+h6,.h6 {
+    font-size: 1.250em;
+}
+
+p {
+    margin-bottom: $spacing-m;
+}
+
+a {
+    color: $color-base;
+    text-decoration: none;
+}
+
+small {
+    font-size: $size-s;
+}

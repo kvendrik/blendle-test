@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="25px" height="6px" viewBox="0 0 25 6" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.4.4 (17249) - http://www.bohemiancoding.com/sketch -->
+    <title>Oval 3 + Oval 3 + Oval 4</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Reader-vertical" sketch:type="MSArtboardGroup" transform="translate(-101.000000, -19.000000)" fill="#948784">
+            <g id="Oval-3-+-Oval-3-+-Oval-4" sketch:type="MSLayerGroup" transform="translate(101.000000, 19.000000)">
+                <ellipse id="Oval-3" sketch:type="MSShapeGroup" cx="2.66837993" cy="3.14782715" rx="2.52631579" ry="2.5"></ellipse>
+                <ellipse id="Oval-3" sketch:type="MSShapeGroup" cx="12.275699" cy="3.14782715" rx="2.52631579" ry="2.5"></ellipse>
+                <ellipse id="Oval-3" sketch:type="MSShapeGroup" cx="21.8830181" cy="3.14782715" rx="2.52631579" ry="2.5"></ellipse>
+            </g>
+        </g>
+    </g>
+</svg>

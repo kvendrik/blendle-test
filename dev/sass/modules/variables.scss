@@ -1,0 +1,55 @@
+//CONTAINER
+$xs-container-width: 90%;
+
+
+//COLORS
+$color-base: #000;
+$color-white: #fff;
+
+$color-accent: #CE242D;
+$color-accent-alt: #F64F2C;
+
+$color-grey-light: #948784;
+$color-grey-lighter: #EAEAEA;
+$color-grey-lightest: #F4F4F4;
+
+
+//TYPOGRAPHY
+$family-primary: 'Lato', Helvetica, Arial, sans-serif;
+$family-secondary: 'Proxima Nova', $family-primary;
+$family-tertiary: 'Alegreya Sans', $family-primary;
+$family-fourth: 'Crimson Text', $family-primary;
+
+$weight-primary: 500;
+$weight-secondary: 900;
+
+$weight-tertiary: 600;
+$weight-tertiary-bold: 700;
+$weight-tertiary-extrabold: 900;
+
+$weight-fourth: 500;
+
+$line-height-body: 1.5em;
+$line-height-headings: 1.07em;
+
+$size-s: .7em;
+$size-m: 20px;
+
+
+//SPACING
+$spacing-m: 1em;
+
+
+//BORDERS
+$border-style: solid;
+$border-width: 1px;
+$border-radius: 3px;
+
+
+//ANIMATIONS
+$transition-duration: .3s;
+$transition-timing: ease;
+
+
+//FONTS
+$fonts-path: '/fonts/';
