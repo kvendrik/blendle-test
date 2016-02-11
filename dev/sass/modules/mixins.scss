@@ -39,3 +39,15 @@
 
     }
 }
+
+//Screen-lg
+@mixin screen-lg-min {
+    @include media(map-get($screen-lg, 'breakpoint')){
+        @content;
+    }
+}
+@mixin screen-lg-max {
+    @include media($max-width: map-get($screen-lg, 'breakpoint')){
+        @content;
+    }
+}

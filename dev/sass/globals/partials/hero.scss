@@ -9,4 +9,9 @@
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-size: cover;
+
+	@include screen-lg-min {
+		height: 430px;
+		margin-bottom: $spacing-xxl;
+	}
 }

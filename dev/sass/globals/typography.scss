@@ -2,7 +2,7 @@ h1,h2,h3,h5,h6 {
     font-family: $family-secondary;
     font-weight: $weight-secondary;
     
-    line-height: $line-height-s;
+    line-height: $line-height-xs;
 
     margin-bottom: $spacing-s;
     text-transform: uppercase;
@@ -71,4 +71,8 @@ a {
 small {
     font-size: $size-xs;
     color: $color-grey-light;
+}
+
+strong, b {
+    font-weight: $weight-primary-bold;
 }

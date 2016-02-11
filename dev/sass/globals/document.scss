@@ -11,13 +11,14 @@ body {
 	background-color: $color-grey-lightest;
 }
 
-.container {
-	width: $xs-container-width;
-	margin: 0 auto;
-	overflow: hidden;
-}
-
 .view-main {
 	width: 100%;
 	background-color: $color-white;
+}
+
+.article-wrapper {
+	width: 90%;
+	max-width: 620px;
+	margin: 0 auto;
+	overflow: hidden;
 }

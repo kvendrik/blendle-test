@@ -1,36 +1,37 @@
 <%
-    var siteUrl = 'http://duxelo.com',
-        appName = 'Revu',
-        appDesc = 'onthullend, informatief en scherp';
+    var articleTitle = 'ADE: Roadtrippen met Amsterdam\'s Finest',
+        articleDesc = 'Amsterdam is deze week het episch centrum van de dancewereld. Meer dan tweeduizend artiesten breken in vijf dagen en nachten de tent af op 350 locaties.',
+        articleUrl = 'http://revu.nl',
+        appName = 'Revu';
 %>
 
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <title><%= appName %> - <%= appDesc %></title>
+    <title><%= articleTitle %> | <%= appName %></title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-    <meta name="description" content="<%= appDesc %>">
+    <meta name="description" content="<%= articleDesc %>">
 
     <meta name="author" content="Koen Vendrik">
     <meta name="follow" content="index, follow">
 
-    <meta property="og:site_name" content="<%= appName %> - <%= appDesc %>">
+    <meta property="og:site_name" content="<%= articleTitle %> | <%= appName %>">
     <meta property="og:locale" content="nl-NL">
     <meta property="og:type" content="website">
-    <meta property="og:description" content="<%= appDesc %>">
-    <meta property="og:url" content="<%= siteUrl %>">
-    <meta property="og:title" content="<%= appName %> - <%= appDesc %>">
-    <meta property="og:image" content="<%= siteUrl %>/img/revu-og.png">
+    <meta property="og:description" content="<%= articleDesc %>">
+    <meta property="og:url" content="<%= articleUrl %>">
+    <meta property="og:title" content="<%= articleTitle %> | <%= appName %>">
+    <meta property="og:image" content="<%= articleUrl %>/img/revu-og.png">
     <meta property="fb:app_id" content="">
 
     <meta name="twitter:card" content="summary">
     <meta name="twitter:site" content="@revu">
-    <meta name="twitter:url" content="<%= siteUrl %>">
-    <meta name="twitter:title" content="<%= appName %> - <%= appDesc %>">
-    <meta name="twitter:description" content="<%= appDesc %>">
-    <meta name="twitter:image" content="<%= siteUrl %>/img/revu-og.png">
+    <meta name="twitter:url" content="<%= articleUrl %>">
+    <meta name="twitter:title" content="<%= articleTitle %> | <%= appName %>">
+    <meta name="twitter:description" content="<%= articleDesc %>">
+    <meta name="twitter:image" content="<%= articleUrl %>/img/revu-og.png">
 
     <link rel="apple-touch-icon" sizes="57x57" href="/img/favicons/apple-touch-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="/img/favicons/apple-touch-icon-60x60.png">
@@ -54,7 +55,7 @@
 
     <link rel="stylesheet" type="text/css" href="/css/main.min.css">
 
-    <link href='https://fonts.googleapis.com/css?family=Lato:400,400italic|Crimson+Text:400,400italic,600,600italic|Alegreya+Sans:500,500italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,400italic,700,700italic|Crimson+Text:400,400italic,600,600italic|Alegreya+Sans:500,500italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
     <script src="https://use.typekit.net/nsq6dtn.js"></script>
     <script>try{Typekit.load({ async: true });}catch(e){}</script>
 

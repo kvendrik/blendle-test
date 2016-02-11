@@ -1,33 +1,100 @@
 .masthead {
-	overflow: hidden;
-
 	height: 48px;
 	line-height: 48px;
+	text-align: center;
 
 	&__logo {
-		width: 72px;
 		box-sizing: content-box;
-		
-		padding-left: $spacing-s;
-		float: left;
+		display: inline-block;
+
+		width: 110px;
+		padding-left: 0;
 
 		img {
 			width: 100%;
 		}
 	}
+
+	&__meta {
+		display: inline-block;
+		font-size: $size-xxs;
+		
+		background-color: $color-white;
+		line-height: $line-height-m;
+
+		padding: $spacing-s $spacing-m;
+		border-radius: 3px;
+	}
+
+	&__promo {
+		margin-left: $spacing-xs;
+		margin-right: $spacing-m;
+		float: none;
+		position: relative;
+		top: -2px;
+	}
+
+	&__action-buttons {
+		float: left;
+
+		.masthead__btn:first-child {
+			border-left: none;
+		}
+	}
 	
 	&__btn {
 		height: 100%;
-		display: inline-block;
+		width: 48px;
 
-		margin-left: $spacing-s;
-		
-		padding: 0 $spacing-s;
+		line-height: 48px;
+		display: block;
+		float: left;
+
+		text-align: center;
 		@include border(left);
 
-		svg {
-			position: relative;
-			top: -3px;
+		@include transition(background-color);
+
+		&.masthead__btn--svg-correction {
+			svg {
+				position: relative;
+				top: -4px;
+			}
+		}
+
+		&:hover {
+			path, ellipse {
+				fill: $color-white;
+			}
+			background-color: $color-accent;
+		}
+
+		@each $name, $color in $colors-social {
+			&.masthead__btn--#{$name}:hover {
+				background-color: $color;
+			}
+		}
+	}
+
+	&.masthead--card {
+		text-align: left;
+
+		.masthead__logo {
+			width: 72px;
+			padding-left: $spacing-s;
+		}
+
+		.masthead__promo {
+			float: left;
+			top: 0;
+		}
+
+		.masthead__action-buttons {
+			float: right;
+
+			.masthead__btn:first-child {
+				@include border(left);
+			}
 		}
 	}
 

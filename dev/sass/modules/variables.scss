@@ -1,5 +1,7 @@
 //CONTAINER
-$xs-container-width: 90%;
+$screen-lg: (
+	breakpoint: 620px
+);
 
 
 //COLORS
@@ -13,6 +15,13 @@ $color-grey-light: #948784;
 $color-grey-lighter: #EAEAEA;
 $color-grey-lightest: #F4F4F4;
 
+$colors-social: (
+	blendle: #FF6255,
+	facebook: #3b5998,
+	twitter: #00aced,
+	linkedin: #007bb5
+);
+
 
 //TYPOGRAPHY
 $family-primary: 'Lato', Helvetica, Arial, sans-serif;
@@ -21,6 +30,7 @@ $family-tertiary: 'Alegreya Sans', $family-primary;
 $family-fourth: 'Crimson Text', $family-primary;
 
 $weight-primary: 400;
+$weight-primary-bold: 700;
 $weight-secondary: 700;
 $weight-secondary-black: 900;
 
@@ -47,6 +57,7 @@ $spacing-s: .5em;
 $spacing-m: 1em;
 $spacing-l: 2em;
 $spacing-xl: 2.5em;
+$spacing-xxl: 3.5em;
 
 
 //BORDERS
@@ -56,7 +67,7 @@ $border-radius: 3px;
 
 
 //ANIMATIONS
-$transition-duration: .3s;
+$transition-duration: .1s;
 $transition-timing: ease;
 
 

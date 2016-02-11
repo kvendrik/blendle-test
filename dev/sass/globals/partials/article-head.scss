@@ -1,8 +1,14 @@
 .article-head {
 	margin-bottom: $spacing-l;
 
+	&__sub-title {
+		@extend .h--accent;
+		max-width: 300px;
+	}
+
 	&__title {
 		font-weight: $weight-secondary-black;
+		max-width: 585px;
 	}
 
 }

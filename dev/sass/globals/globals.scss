@@ -1,3 +1,9 @@
 .pull-right {
 	float: right;
 }
+
+@include screen-lg-max {
+	.hidden-xs {
+		display: none !important;
+	}
+}
