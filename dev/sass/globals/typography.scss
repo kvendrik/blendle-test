@@ -1,15 +1,14 @@
 h1,h2,h3,h5,h6 {
     font-family: $family-secondary;
     font-weight: $weight-secondary;
-    line-height: $line-height-headings;
+    
+    line-height: $line-height-s;
+
     margin-bottom: $spacing-s;
+    text-transform: uppercase;
 
     &.h--accent {
         color: $color-accent;
-    }
-
-    &.h--black {
-        font-weight: $weight-secondary-black;
     }
 }
 
@@ -29,11 +28,33 @@ h5,.h5 {
     font-size: 1.2em;
 }
 h6,.h6 {
-    font-size: 1em;
+    font-size: 1.04em;
+
+    &.h6--meta, &.h6--sub-title {
+        font-family: $family-tertiary;
+    }
+
+    &.h6--meta {
+        font-size: $size-s;
+        text-transform: none;
+        font-weight: $weight-tertiary-extrabold;
+    }
+
+    &.h6--sub-title {
+        color: $color-accent;
+        margin-top: $spacing-xl;
+        font-weight: $weight-tertiary-bold;
+    }
 }
 
 p {
+    font-family: $family-fourth;
+    font-weight: $weight-fourth;
     margin-bottom: $spacing-m;
+
+    strong, b {
+        font-weight: $weight-fourth-semibold;
+    }
 
     &.p--intro {
         font-size: 1.2em;
@@ -48,6 +69,6 @@ a {
 }
 
 small {
-    font-size: $size-s;
+    font-size: $size-xs;
     color: $color-grey-light;
 }

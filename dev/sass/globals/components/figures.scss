@@ -1,0 +1,20 @@
+figure {
+	width: 100%;
+	overflow: hidden;
+	margin-bottom: $spacing-m;
+
+	img {
+		width: 100%;
+		margin-bottom: $spacing-xs;
+	}
+
+	figcaption {
+		max-width: 120px;
+		text-align: right;
+		float: right;
+
+		font-size: $size-xxs;
+		color: $color-grey-light;
+		line-height: $line-height-s;
+	}
+}
