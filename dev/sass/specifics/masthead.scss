@@ -1,3 +1,34 @@
 .masthead {
+	overflow: hidden;
+
+	height: 48px;
+	line-height: 48px;
+
+	&__logo {
+		width: 72px;
+		box-sizing: content-box;
+		
+		padding-left: $spacing-s;
+		float: left;
+
+		img {
+			width: 100%;
+		}
+	}
 	
+	&__btn {
+		height: 100%;
+		display: inline-block;
+
+		margin-left: $spacing-s;
+		
+		padding: 0 $spacing-s;
+		@include border(left);
+
+		svg {
+			position: relative;
+			top: -3px;
+		}
+	}
+
 }

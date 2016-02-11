@@ -16,18 +16,19 @@ $color-grey-lightest: #F4F4F4;
 
 //TYPOGRAPHY
 $family-primary: 'Lato', Helvetica, Arial, sans-serif;
-$family-secondary: 'Proxima Nova', $family-primary;
+$family-secondary: 'proxima-nova', $family-primary;
 $family-tertiary: 'Alegreya Sans', $family-primary;
 $family-fourth: 'Crimson Text', $family-primary;
 
-$weight-primary: 500;
-$weight-secondary: 900;
+$weight-primary: 400;
+$weight-secondary: 700;
+$weight-secondary-black: 900;
 
-$weight-tertiary: 600;
+$weight-tertiary: 500;
 $weight-tertiary-bold: 700;
-$weight-tertiary-extrabold: 900;
+$weight-tertiary-extrabold: 800;
 
-$weight-fourth: 500;
+$weight-fourth: 400;
 
 $line-height-body: 1.5em;
 $line-height-headings: 1.07em;
@@ -37,7 +38,9 @@ $size-m: 20px;
 
 
 //SPACING
+$spacing-s: .5em;
 $spacing-m: 1em;
+$spacing-l: 2em;
 
 
 //BORDERS

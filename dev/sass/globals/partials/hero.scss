@@ -1,0 +1,12 @@
+.hero {
+	width: 100%;
+	height: 200px;
+
+	margin-bottom: $spacing-m;
+
+	background-image: url(/img/elias-mazian-on-stage.jpg);
+	background-color: $color-base;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+}
