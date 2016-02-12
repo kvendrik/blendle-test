@@ -1,7 +1,9 @@
 .article-card {
 	width: 100%;
 	max-width: 372px;
-	margin: $spacing-xl auto;
+
+	margin: 0 auto;
+	margin-top: $spacing-m;
 
 	&__info, &__preview {
 		background-color: $color-white;

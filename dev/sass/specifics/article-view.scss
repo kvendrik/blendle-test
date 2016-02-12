@@ -1,20 +1,23 @@
+.article-view, .masthead.article-view-masthead {
+	display: none;
+	opacity: 0;
+
+	background-color: $color-white;
+
+	.article-view--block & {
+		display: block;
+	}
+}
+
 .article-view {
 	position: absolute;
 	top: 48px;
 	left: 0;
 	right: 0;
 
-	background-color: $color-white;
-	
-	display: none;
-	opacity: 0;
 	transform: translateY(10vh);
 
 	@include transition((opacity, transform), .3s);
-
-	.article-view--block & {
-		display: block;
-	}
 
 	.article-view--visible & {
 		opacity: 1;
@@ -29,9 +32,6 @@
 	right: 0;
 	z-index: 2;
 
-	background-color: $color-white;
-
-	opacity: 0;
 	@include transition(opacity, .3s);
 
 	.article-view--visible & {

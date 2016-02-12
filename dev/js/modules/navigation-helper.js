@@ -1,8 +1,3 @@
-//1. x fixed header
-//2. history state
-//3. like btn
-//4. img zoom
-
 module.exports = {
 	
 	init: function(){

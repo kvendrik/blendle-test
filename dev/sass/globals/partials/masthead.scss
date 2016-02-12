@@ -4,6 +4,7 @@
 	text-align: center;
 
 	position: relative;
+	@include border(bottom);
 
 	&__overlay {
 		position: relative;
