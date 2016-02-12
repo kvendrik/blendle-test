@@ -5,7 +5,9 @@
 
 		<div class="article-card__info__meta">
 			<ul class="list--inline pull-left">
-				<li class="article-card__info__meta__tag-wrapper"><span class="tag">Tech</span></li>
+				<li class="article-card__info__meta__tag-wrapper">
+					<a href="https://blendle.com/search/tech" class="tag">Tech</a>
+				</li>
 				<li>
 					<div class="profile-preview profile-preview--alert">
 						<div class="profile-preview__crop">
@@ -30,9 +32,7 @@
 			</ul>
 			<div class="pull-right">
 				<small>
-					<span class="meta-count-btn__icon">
-						<% include _inc/icons/heart.svg %>
-					</span>
+					<% include _inc/icons/heart.svg %>
 					69
 				</small>
 			</div>
@@ -41,14 +41,16 @@
 		<div class="article-card__info__quote">
 			<blockquote>
 				Wat een ongelofelijk interessant artikel zeg.
-				<div class="article-card__info__quote__cite">Joris Bellwinkel</div>
+				<a href="https://blendle.com/user/jorisbellwinkel"
+				   title="Joris Bellwinkel op Twitter"
+				   class="article-card__info__quote__cite">Joris Bellwinkel</a>
 			</blockquote>
 		</div>
 
 	</section>
 
 	<section class="article-card__preview">
-		<header class="masthead masthead--card">
+		<header class="masthead">
 			<div class="masthead__logo">
 				<img src="/img/revu-logo.png" alt="Revu Logo" />
 			</div>
@@ -62,7 +64,48 @@
 			</div>
 		</header>
 
-		<section class="hero hero--card"></section>
+		<div class="dropdown">
+			<ul class="list--clean">
+				<li>
+					<span class="list__item__icon">
+						<% include _inc/icons/pin.svg %>
+					</span>
+					Lees later
+				</li>
+				<li>
+					<span class="list__item__icon">
+						<% include _inc/icons/email.svg %>
+					</span>
+					E-mail naar een vriend
+				</li>
+				<li>
+					<span class="list__item__icon">
+						<% include _inc/icons/fb.svg %>
+					</span>
+					Deel via Facebook
+				</li>
+				<li>
+					<span class="list__item__icon">
+						<% include _inc/icons/twitter.svg %>
+					</span>
+					Deel via Twitter
+				</li>
+			</ul>
+			<footer class="dropdown__footer">
+				<table>
+					<tr>
+						<td>Leestijd</td>
+						<td>24 minuten</td>
+					</tr>
+					<tr>
+						<td>Datum</td>
+						<td>19 januari 2016</td>
+					</tr>
+				</table>
+			</footer>
+		</div>
+
+		<section class="hero"></section>
 
 		<div class="text-container">
 			<header class="article-head">

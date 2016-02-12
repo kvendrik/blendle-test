@@ -1,6 +1,15 @@
 .tag {
 	font-size: .6em;
 	padding: $spacing-xs $spacing-s;
+
 	@include border($color: $color-base);
 	border-radius: $border-radius;
+
+	@include transition((background-color, color));
+	cursor: pointer;
+
+	&:hover {
+		background-color: $color-base;
+		color: $color-white;
+	}
 }

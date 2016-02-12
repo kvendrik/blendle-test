@@ -53,10 +53,17 @@
 		display: block;
 		float: left;
 
+		cursor: pointer;
+
 		text-align: center;
 		@include border(left);
 
 		@include transition(background-color);
+
+		path, ellipse {
+			fill: $color-grey-light;
+			@include transition(fill);
+		}
 
 		&.masthead__btn--svg-correction {
 			svg {
@@ -67,36 +74,17 @@
 
 		&:hover {
 			path, ellipse {
-				fill: $color-white;
+				fill: $color-base;
 			}
-			background-color: $color-accent;
 		}
 
 		@each $name, $color in $colors-social {
 			&.masthead__btn--#{$name}:hover {
 				background-color: $color;
-			}
-		}
-	}
 
-	&.masthead--card {
-		text-align: left;
-
-		.masthead__logo {
-			width: 72px;
-			padding-left: $spacing-s;
-		}
-
-		.masthead__promo {
-			float: left;
-			top: 0;
-		}
-
-		.masthead__action-buttons {
-			float: right;
-
-			.masthead__btn:first-child {
-				@include border(left);
+				path, ellipse {
+					fill: $color-white;
+				}
 			}
 		}
 	}

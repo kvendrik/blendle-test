@@ -26,7 +26,7 @@
 			@include border(bottom, $color-grey-lighter-2);
 
 			&__tag-wrapper {
-				padding-bottom: $spacing-s;
+				padding-bottom: $spacing-xs;
 				@include border(bottom, $color-base, 2px);
 			}
 		}
@@ -42,6 +42,12 @@
 
 			&__cite {
 				color: $color-grey-light;
+				display: block;
+				@include transition(color);
+
+				&:hover {
+					color: $color-base;
+				}
 			}
 		}
 	}
@@ -53,6 +59,8 @@
 		overflow: hidden;
 		box-shadow: 0 1px 3px rgba($color-base, .09);
 
+		cursor: pointer;
+
 		&:after {
 			content: '';
 			height: 100px;
@@ -62,6 +70,39 @@
 			right: 0;
 			bottom: 0;
 			background: linear-gradient(transparent, $color-white);
+		}
+
+		.masthead {
+			text-align: left;
+
+			&__logo {
+				width: 72px;
+				padding-left: $spacing-s;
+			}
+
+			&__promo {
+				float: left;
+				top: 0;
+			}
+
+			&__action-buttons {
+				float: right;
+
+				.masthead__btn:first-child {
+					@include border(left);
+				}
+			}
+		}
+
+		.dropdown {
+			position: absolute;
+			top: 60px;
+			right: 10px;
+		}
+
+		.hero {
+			height: 200px;
+			margin-bottom: $spacing-m;
 		}
 	}
 }

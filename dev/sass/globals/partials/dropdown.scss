@@ -1,0 +1,55 @@
+.dropdown {
+	width: 260px;
+	background-color: $color-white;
+
+	border-radius: $border-radius;
+	box-shadow: 0 1px 6px rgba($color-base, .4);
+
+	li {
+		font-size: $size-xs;
+		padding: $spacing-s $spacing-m;
+		@include border(bottom);
+		color: $color-grey-light;
+
+		@include transition((color, background-color));
+
+		&:hover {
+			background-color: $color-grey-lightest;
+			color: $color-base;
+		}
+	}
+
+	&:before {
+		content: '';
+
+		position: absolute;
+		top: -5px;
+		right: $spacing-s;
+
+		width: 0;
+		height: 0;
+
+		border-left: 5px solid transparent;
+		border-right: 5px solid transparent;	
+		border-bottom: 5px solid $color-white;
+	}
+
+	&__footer {
+		font-size: $size-xxs;
+		
+		padding: $spacing-m $spacing-m;
+		background-color: $color-grey-lightest-2;
+
+		border-bottom-left-radius: $border-radius;
+		border-bottom-right-radius: $border-radius;
+
+		td {
+			line-height: $line-height-m;
+
+			&:first-child {
+				color: $color-grey-light;
+				padding-right: $spacing-s;
+			}
+		}
+	}
+}

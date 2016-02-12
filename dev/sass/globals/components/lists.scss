@@ -10,5 +10,17 @@
 			margin-right: 0;
 		}
 	}
+}
 
+.list--clean {
+	li {
+		display: block;
+	}
+}
+
+li .list__item__icon {
+	display: inline-block;
+	position: relative;
+	top: 3px;
+	margin-right: $spacing-s;
 }
