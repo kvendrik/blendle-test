@@ -3,6 +3,7 @@ var utils = require('../utils');
 module.exports = {
 	
 	init: function(){
+		this._urlBase = (location.pathname || '/');
 		this._articleView = document.getElementById('js-article-view');
 		this._bindEvents();
 		this._checkHash();
@@ -17,12 +18,12 @@ module.exports = {
 			var slug = this.getAttribute('data-article-open');
 			history.pushState({
 				slug: slug
-			}, null, '/blendle-test/#/article/'+slug);
+			}, null, self._urlBase+'#/article/'+slug);
 			self._openView();
 		};
 
 		var onCloseBtnClick = function(){
-			history.pushState({}, null, '/blendle-test');
+			history.pushState({}, null, self._urlBase);
 			self._closeView();
 		};
 
@@ -39,7 +40,7 @@ module.exports = {
 		var hash = location.hash;
 
 		if(hash){
-			var slug = hash.replace('/blendle-test/#/article/', '');
+			var slug = hash.replace(this._urlBase+'#/article/', '');
 			this._openView();
 		}
 	},
