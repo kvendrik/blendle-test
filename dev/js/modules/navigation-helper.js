@@ -22,7 +22,7 @@ module.exports = {
 		};
 
 		var onCloseBtnClick = function(){
-			history.pushState({}, null, '/');
+			history.pushState({}, null, '/blendle-test');
 			self._closeView();
 		};
 
