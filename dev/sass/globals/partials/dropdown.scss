@@ -23,8 +23,11 @@
 	li {
 		font-size: $size-xs;
 		padding: $spacing-s $spacing-m;
+		
 		@include border(bottom);
 		color: $color-grey-light;
+
+		cursor: pointer;
 
 		@include transition((color, background-color));
 
