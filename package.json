@@ -1,7 +1,7 @@
 {
-  "name": "revu-blog",
+  "name": "blendle-test",
   "version": "0.1.0",
-  "description": "Revu Blog",
+  "description": "Blendle Test",
   "main": "Gulpfile.js",
   "dependencies": {},
   "devDependencies": {
