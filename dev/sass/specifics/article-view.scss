@@ -12,11 +12,11 @@
 
 	@include transition((opacity, transform), .3s);
 
-	.article-view--block &{
+	.article-view--block & {
 		display: block;
 	}
 
-	.article-view--visible &{
+	.article-view--visible & {
 		opacity: 1;
 		transform: translateY(0);
 	}
