@@ -3,16 +3,36 @@
 	line-height: 48px;
 	text-align: center;
 
-	&__logo {
-		box-sizing: content-box;
-		display: inline-block;
+	position: relative;
 
+	&__center {
+		position: absolute;
+		left: 0;
+		right: 0;
+	}
+
+	&__logo {
 		width: 110px;
-		padding-left: 0;
+		margin: 0 auto;
 
 		img {
 			width: 100%;
 		}
+	}
+
+	&__date-tag {
+		font-size: $size-xxs;
+		color: $color-grey-light;
+		background-color: $color-white;
+
+		padding: $spacing-xs $spacing-m;
+		display: inline-block;
+
+		line-height: $line-height-m;
+		border-radius: $border-radius;
+		
+		position: relative;
+		top: -30px;
 	}
 
 	&__meta {
