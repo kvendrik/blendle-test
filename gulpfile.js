@@ -17,7 +17,7 @@ var pkg = require('./package.json'),
         ejs: {
             src: [rootPaths.dev+'/ejs/**/*.ejs', '!'+rootPaths.dev+'/ejs/_inc/**/*.ejs'],
             all: [rootPaths.dev+'/ejs/**/*.ejs'],
-            destFolder: rootPaths.www+'/'
+            destFolder: './'
         },
         js: {
             src: [rootPaths.dev+'/js/main.js'],
@@ -39,7 +39,7 @@ gulp.task('connect', function(){
         livereload: true,
         host: '0.0.0.0',
         port: 9000,
-        root: rootPaths.www
+        root: './'
     });
 });
 
