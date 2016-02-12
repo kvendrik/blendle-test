@@ -5,6 +5,11 @@
 
 	position: relative;
 
+	&__overlay {
+		position: relative;
+		z-index: 1;
+	}
+
 	&__center {
 		position: absolute;
 		left: 0;

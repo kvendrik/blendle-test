@@ -6,7 +6,17 @@
 }
 
 @include screen-lg-max {
-	.hidden-xs {
+	.hidden-lg-max {
+		display: none !important;
+	}
+}
+@include screen-md-max {
+	.hidden-md-max {
+		display: none !important;
+	}
+}
+@include screen-sm-max {
+	.hidden-sm-max {
 		display: none !important;
 	}
 }

@@ -44,13 +44,18 @@
 }
 
 //Screen-lg
-@mixin screen-lg-min {
-    @include media(map-get($screen-lg, 'breakpoint')){
+@mixin screen-lg-max {
+    @include media($max-width: $breakpoint-lg){
         @content;
     }
 }
-@mixin screen-lg-max {
-    @include media($max-width: map-get($screen-lg, 'breakpoint')){
+@mixin screen-md-max {
+    @include media($max-width: $breakpoint-md){
+        @content;
+    }
+}
+@mixin screen-sm-max {
+    @include media($max-width: $breakpoint-sm){
         @content;
     }
 }

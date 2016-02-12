@@ -1,5 +1,6 @@
 .article-card {
-	width: 372px;
+	width: 100%;
+	max-width: 372px;
 	margin: $spacing-xl auto;
 
 	&__info, &__preview {
@@ -7,7 +8,7 @@
 	}
 
 	&__info {
-		width: 361px;
+		width: 96%;
 		margin: 0 auto;
 		overflow: hidden;
 
