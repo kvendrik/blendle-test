@@ -1,12 +1,47 @@
 <% layout('_inc/layout') -%>
 
-<section class="view-main">
-	
+<article class="article-card">
+	<section class="article-card__preview">
+		<header class="masthead masthead--card">
+			<div class="masthead__logo">
+				<img src="/img/revu-logo.png" alt="Revu Logo" />
+			</div>
+			<div class="masthead__action-buttons">
+				<small class="masthead__promo">
+					<b>€ 0,29</b>
+				</small>
+				<a class="masthead__btn masthead__btn--svg-correction">
+					<% include _inc/icons/ellipsis.svg %>
+				</a>
+			</div>
+		</header>
+
+		<section class="hero hero--card"></section>
+
+		<div class="text-container">
+			<header class="article-head">
+				<h5 class="article-head__sub-title">ADE: ROADTRIPPEN MET AMSTERDAM’S FINEST</h5>
+				<h1 class="article-head__title">‘KOMT EEN COWBOY BIJ DE KAPPER…’</h1>
+
+				<p class="p--intro">
+					Amsterdam is deze week het episch centrum van de dancewereld. Meer dan tweeduizend artiesten breken in vijf dagen en nachten de tent af op 350 locaties. Amsterdam Dance Event is hét grootste clubfestival voor elektronische muziek. Elias Mazian (26) draait er voor de derde keer.
+				</p>
+			</header>
+			<h6 class="h6--meta">Tekst Nick Klaessens</h6>
+			<p>
+				Elias Mazian is een Amsterdamse dj met Amersfoortse Mocro-roots, die het beste jaar uit zijn carrière tot nu toe beleeft. Zijn naam prijkte onder veel meer op de posters van Mysteryland, Awakenings, Loveland en samen met zijn maten Job Jobse en Luc Mastenbroek had hij het belangrijkste dj-slot op Lowlands: de zaterdagnacht in de X-Ray. ‘Sick jongen, wat daar gebeurde,’ glundert hij zijn onderkaak bijna uit de kom. We zitten in een geleende auto, waarin we hem van Amsterdam naar Maastricht (en terug) brengen voor een set op technofeest Claydrum Indoor. ‘We’ zijn fotograaf Milan en schrijver Nick, en vanaf hier is het ieder voor zich in de flarden van deze nachtelijke roadtrip.
+			</p>
+		</div>
+	</section>
+</article>
+
+
+<section class="article-view">
 	<%- partial('_inc/masthead') %>
 
 	<section class="hero"></section>
 
-	<article class="article-wrapper">
+	<div class="text-container">
 
 		<header class="article-head">
 			<h5 class="article-head__sub-title">ADE: ROADTRIPPEN MET AMSTERDAM’S FINEST</h5>
@@ -138,6 +173,6 @@
 		<h6 class="h6--sub-title">01.18 UUR</h6>
 		<p>Elias staat constant met elastieken benen achter de decks te dansen, z’n handen minutieus aan knoppen draaiend, een Lucky Strike op half zeven in de mondhoek en dan sléúrt-ie het publiek aan de haren mee naar de climax. Dat is zo’n moment dat-ie met van die Luis-Suarez-als-die-gescoord-heeft-pistooltjes in de lucht schiet. </p>
 
-	</article>
+	</div>
 </section>
 

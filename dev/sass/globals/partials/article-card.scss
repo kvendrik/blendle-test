@@ -1,0 +1,24 @@
+.article-card {
+	width: 372px;
+	background-color: $color-white;
+	margin: $spacing-xl auto;
+
+	&__preview {
+		height: 629px;
+		position: relative;
+
+		overflow: hidden;
+		box-shadow: 0 1px 3px rgba($color-base, .09);
+
+		&:after {
+			content: '';
+			height: 100px;
+
+			position: absolute;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			background: linear-gradient(transparent, $color-white);
+		}
+	}
+}
