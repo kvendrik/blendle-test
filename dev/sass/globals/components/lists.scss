@@ -1,0 +1,14 @@
+.list--inline {
+	overflow: hidden;
+	
+	li {
+		display: block;
+		float: left;
+		margin-right: $spacing-s;
+
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+
+}

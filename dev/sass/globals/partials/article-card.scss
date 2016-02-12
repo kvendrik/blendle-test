@@ -1,7 +1,50 @@
 .article-card {
 	width: 372px;
-	background-color: $color-white;
 	margin: $spacing-xl auto;
+
+	&__info, &__preview {
+		background-color: $color-white;
+	}
+
+	&__info {
+		width: 361px;
+		margin: 0 auto;
+		overflow: hidden;
+
+		border-top-left-radius: $border-radius;
+		border-top-right-radius: $border-radius;
+		
+		box-shadow: 0 1px 2px rgba($color-base, .07);
+
+		&__meta, &__quote {
+			overflow: hidden;
+		}
+
+		&__meta {
+			padding: $spacing-s $spacing-m;
+			padding-bottom: 0;
+			@include border(bottom, $color-grey-lighter-2);
+
+			&__tag-wrapper {
+				padding-bottom: $spacing-s;
+				@include border(bottom, $color-base, 2px);
+			}
+		}
+
+		&__quote {
+			padding: $spacing-s $spacing-m;
+
+			blockquote {
+				font-size: $size-xs;
+				font-style: normal;
+				line-height: $line-height-m;
+			}
+
+			&__cite {
+				color: $color-grey-light;
+			}
+		}
+	}
 
 	&__preview {
 		height: 629px;

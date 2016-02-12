@@ -1,0 +1,6 @@
+.tag {
+	font-size: .6em;
+	padding: $spacing-xs $spacing-s;
+	@include border($color: $color-base);
+	border-radius: $border-radius;
+}

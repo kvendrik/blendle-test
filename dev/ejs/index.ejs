@@ -1,6 +1,52 @@
 <% layout('_inc/layout') -%>
 
 <article class="article-card">
+	<section class="article-card__info">
+
+		<div class="article-card__info__meta">
+			<ul class="list--inline pull-left">
+				<li class="article-card__info__meta__tag-wrapper"><span class="tag">Tech</span></li>
+				<li>
+					<div class="profile-preview profile-preview--alert">
+						<div class="profile-preview__crop">
+							<img src="/img/thomas.jpg" alt="Kim">
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="profile-preview profile-preview--alert">
+						<div class="profile-preview__crop">
+							<img src="/img/kim.jpg" alt="Kim">
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="profile-preview">
+						<div class="profile-preview__crop">
+							<img src="/img/vince.jpg" alt="Kim">
+						</div>
+					</div>
+				</li>
+			</ul>
+			<div class="pull-right">
+				<small>
+					<span class="meta-count-btn__icon">
+						<% include _inc/icons/heart.svg %>
+					</span>
+					69
+				</small>
+			</div>
+		</div>
+
+		<div class="article-card__info__quote">
+			<blockquote>
+				Wat een ongelofelijk interessant artikel zeg.
+				<div class="article-card__info__quote__cite">Joris Bellwinkel</div>
+			</blockquote>
+		</div>
+
+	</section>
+
 	<section class="article-card__preview">
 		<header class="masthead masthead--card">
 			<div class="masthead__logo">

@@ -5,10 +5,13 @@
 @import "globals/typography";
 @import "globals/globals";
 
+@import "globals/components/lists";
+@import "globals/components/figures";
+@import "globals/components/tags";
+@import "globals/components/profile-previews";
+
 @import "globals/partials/hero";
 @import "globals/partials/article-head";
 @import "globals/partials/article-card";
-
-@import "globals/components/figures";
 
 @import "specifics/masthead";

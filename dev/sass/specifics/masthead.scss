@@ -29,7 +29,10 @@
 	&__promo {
 		margin-left: $spacing-xs;
 		margin-right: $spacing-m;
+		
+		color: $color-grey-light;
 		float: none;
+		
 		position: relative;
 		top: -2px;
 	}
