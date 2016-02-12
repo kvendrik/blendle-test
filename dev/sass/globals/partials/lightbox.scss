@@ -1,0 +1,52 @@
+.lightbox {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 3;
+
+	background-color: rgba($color-base, .85);
+
+	display: none;
+	opacity: 0;
+
+	cursor: zoom-out;
+	text-align: center;
+
+	@include transition(opacity, .3s);
+
+	&__table {
+		display: table;
+		height: 100%;
+		margin: 0 auto;
+
+		&__cell {
+			display: table-cell;
+			vertical-align: middle;
+		}
+	}
+
+	img {
+		width: auto;
+		max-width: 800px;
+		box-shadow: 0 0 10px rgba($color-base, .8);
+
+		opacity: 0;
+		transform: translateY(-40px);
+		@include transition((opacity, transform), .8s, $delay: .3s);
+	}
+
+	&.lightbox--block {
+		display: block;
+	}
+
+	&.lightbox--visible {
+		opacity: 1;
+
+		img {
+			opacity: 1;
+			transform: translateY(0px);
+		}
+	}
+}
