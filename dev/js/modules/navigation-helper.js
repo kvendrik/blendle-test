@@ -1,7 +1,11 @@
+//1. fixed header
+//2. history state
+//3. like btn
+//4. img zoom
+
 module.exports = {
 	
 	init: function(){
-		this._articleView = document.getElementById('js-article-view');
 		this._articleViewTransDur = this._getTransitionDurationInMilliSec();
 		this._bindEvents();
 	},
@@ -19,25 +23,24 @@ module.exports = {
 	},
 
 	_getTransitionDurationInMilliSec: function(){
-		var cssStr = getComputedStyle(this._articleView).getPropertyValue('transition-duration'),
+		var articleView = document.getElementById('js-article-view'),
+			cssStr = getComputedStyle(articleView).getPropertyValue('transition-duration'),
 			number = Number(cssStr.replace('s', ''));
 		return number*1000;
 	},
 
 	_openView: function(){
-		var articleView = this._articleView;
-		articleView.classList.add('article-view--block');
+		document.body.classList.add('article-view--block');
 		setTimeout(function(){
-			articleView.classList.add('article-view--visible');
+			document.body.classList.add('article-view--visible');
 		}, 50);
 	},
 
 	_closeView: function(){
-		var articleView = this._articleView;
-		articleView.classList.remove('article-view--visible');
+		document.body.classList.remove('article-view--visible');
 
 		setTimeout(function(){
-			articleView.classList.remove('article-view--block');
+			document.body.classList.remove('article-view--block');
 		}, this._articleViewTransDur);
 	}
 
