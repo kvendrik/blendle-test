@@ -5,6 +5,12 @@
 	border-radius: $border-radius;
 	box-shadow: 0 1px 6px rgba($color-base, .4);
 
+	display: none;
+
+	&.dropdown--visible {
+		display: block;
+	}
+
 	li {
 		font-size: $size-xs;
 		padding: $spacing-s $spacing-m;

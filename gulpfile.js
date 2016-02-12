@@ -5,7 +5,7 @@ var gulp = require('gulp'),
     autoprefixer = require('gulp-autoprefixer'),
     rename = require('gulp-rename'),
     gutil = require('gulp-util'),
-    concat = require('gulp-concat'),
+    browserify = require('gulp-browserify'),
     uglify = require('gulp-uglify');
 
 var pkg = require('./package.json'),
@@ -20,7 +20,8 @@ var pkg = require('./package.json'),
             destFolder: rootPaths.www+'/'
         },
         js: {
-            src: [rootPaths.dev+'/js/**/*.js'],
+            src: [rootPaths.dev+'/js/main.js'],
+            srcAll: [rootPaths.dev+'/js/**/*.js'],
             destFile: 'app.js',
             destFileMin: 'app.min.js',
             destFolder: rootPaths.www+'/js/'
@@ -44,7 +45,7 @@ gulp.task('connect', function(){
 
 gulp.task('watch', function(){
     gulp.watch(paths.ejs.all, ['ejs']);
-    gulp.watch(paths.js.src, ['concat']);
+    gulp.watch(paths.js.srcAll, ['browsify']);
     gulp.watch(paths.sass.all, ['sass']);
 });
 
@@ -70,9 +71,13 @@ gulp.task('sass', function () {
         .pipe(connect.reload());
 });
 
-gulp.task('concat', function() {
+gulp.task('browsify', function() {
     gulp.src(paths.js.src)
-        .pipe(concat(paths.js.destFile))
+        .pipe(browserify({
+            insertGlobals: true,
+            debug: !gulp.env.production
+        }))
+        .pipe(rename(paths.js.destFile))
         .pipe(gulp.dest(paths.js.destFolder))
         .pipe(connect.reload());
 });
@@ -84,7 +89,7 @@ gulp.task('uglify', function() {
         .pipe(gulp.dest(paths.js.destFolder));
 });
 
-gulp.task('js', ['concat', 'uglify']);
+gulp.task('js', ['browsify', 'uglify']);
 
 gulp.task('default', ['connect', 'watch']);
 gulp.task('build', ['ejs', 'sass', 'js']);
