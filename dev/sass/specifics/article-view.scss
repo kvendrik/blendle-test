@@ -37,4 +37,19 @@
 	.article-view--visible & {
 		opacity: 1;
 	}
+
+	.dropdown {
+		position: fixed;
+		top: 60px;
+		left: 95px;
+		z-index: 3;
+
+		text-align: left;
+		line-height: $line-height-m;
+
+		&:before {
+			right: 0;
+			left: $spacing-m;
+		}
+	}
 }

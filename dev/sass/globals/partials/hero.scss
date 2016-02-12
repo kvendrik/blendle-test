@@ -7,4 +7,9 @@
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-size: cover;
+
+	@include screen-sm-max {
+		height: 230px;
+		margin-bottom: $spacing-l;
+	}
 }

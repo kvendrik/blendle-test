@@ -15,7 +15,8 @@
 			<a class="masthead__btn">
 				<% include icons/pin.svg %>
 			</a>
-			<a class="masthead__btn masthead__btn--svg-correction hidden-sm-max">
+			<a class="masthead__btn masthead__btn--svg-correction hidden-sm-max"
+			   data-dropdown-trigger="article-view-masthead-dropdown">
 				<% include icons/ellipsis.svg %>
 			</a>
 			<small class="masthead__promo hidden-sm-max">
@@ -45,5 +46,46 @@
 				<% include icons/email.svg %>
 			</a>
 		</div>
+	</div>
+
+	<div class="dropdown" data-dropdown="article-view-masthead-dropdown">
+		<ul class="list--clean">
+			<li>
+				<span class="list__item__icon">
+					<% include icons/pin.svg %>
+				</span>
+				Lees later
+			</li>
+			<li>
+				<span class="list__item__icon">
+					<% include icons/email.svg %>
+				</span>
+				E-mail naar een vriend
+			</li>
+			<li>
+				<span class="list__item__icon">
+					<% include icons/fb.svg %>
+				</span>
+				Deel via Facebook
+			</li>
+			<li>
+				<span class="list__item__icon">
+					<% include icons/twitter.svg %>
+				</span>
+				Deel via Twitter
+			</li>
+		</ul>
+		<footer class="dropdown__footer">
+			<table>
+				<tr>
+					<td>Leestijd</td>
+					<td>24 minuten</td>
+				</tr>
+				<tr>
+					<td>Datum</td>
+					<td>19 januari 2016</td>
+				</tr>
+			</table>
+		</footer>
 	</div>
 </header>

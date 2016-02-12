@@ -55,7 +55,7 @@
     <meta name="msapplication-config" content="<%= rootPath %>img/favicons/browserconfig.xml">
     <meta name="theme-color" content="#ffffff">
 
-    <link rel="stylesheet" type="text/css" href="<%= rootPath %>css/main.min.css">
+    <link rel="stylesheet" type="text/css" href="<%= rootPath %>css/main.min.css?<%= Date.now() %>">
 
     <link href='https://fonts.googleapis.com/css?family=Lato:400,400italic,700,700italic|Crimson+Text:400,400italic,600,600italic|Alegreya+Sans:500,500italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
     <script src="https://use.typekit.net/nsq6dtn.js"></script>
@@ -69,7 +69,7 @@
 
     <%- body %>
 
-    <script src="<%= rootPath %>js/app.js"></script>
+    <script src="<%= rootPath %>js/app.js?<%= Date.now() %>"></script>
 
   </body>
 </html>

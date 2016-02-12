@@ -104,15 +104,15 @@
 			}
 		}
 
-		@each $name, $color in $colors-social {
-			&.masthead__btn--#{$name}:hover {
-				background-color: $color;
+		// @each $name, $color in $colors-social {
+		// 	&.masthead__btn--#{$name}:hover {
+		// 		background-color: $color;
 
-				path, ellipse {
-					fill: $color-white;
-				}
-			}
-		}
+		// 		path, ellipse {
+		// 			fill: $color-white;
+		// 		}
+		// 	}
+		// }
 	}
 
 }
