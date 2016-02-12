@@ -7,6 +7,10 @@
 
 		overflow: hidden;
 		border-radius: $border-radius;
+
+		img {
+			width: 100%;
+		}
 	}
 
 	&.profile-preview--alert:after {
@@ -23,9 +27,5 @@
 		position: absolute;
 		bottom: -2px;
 		right: -2px;
-	}
-
-	img {
-		width: 100%;
 	}
 }
