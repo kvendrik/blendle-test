@@ -13,7 +13,7 @@ module.exports = {
 
       	document.body.addEventListener('click', function(){
       		[].forEach.call(dropdowns, function(el){
-      			el.classList.remove('dropdown--visible');
+      			utils.removeVisibleClasses(el, 'dropdown');
       		});
       	}, false);
 
