@@ -14,6 +14,26 @@ body {
 .article-view {
 	width: 100%;
 	background-color: $color-white;
+
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	
+	display: none;
+	opacity: 0;
+	transform: translateY(10vh);
+
+	@include transition((opacity, transform), .3s);
+
+	&.article-view--block {
+		display: block;
+	}
+
+	&.article-view--visible {
+		opacity: 1;
+		transform: translateY(0);
+	}
 }
 
 .text-container {
