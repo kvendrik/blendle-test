@@ -17,7 +17,7 @@ module.exports = {
 			var slug = this.getAttribute('data-article-open');
 			history.pushState({
 				slug: slug
-			}, null, '/#/article/'+slug);
+			}, null, '/blendle-test/#/article/'+slug);
 			self._openView();
 		};
 
@@ -39,7 +39,7 @@ module.exports = {
 		var hash = location.hash;
 
 		if(hash){
-			var slug = hash.replace('/#/article/', '');
+			var slug = hash.replace('/blendle-test/#/article/', '');
 			this._openView();
 		}
 	},
