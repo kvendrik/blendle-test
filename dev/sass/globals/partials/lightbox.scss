@@ -14,7 +14,7 @@
 	cursor: zoom-out;
 	text-align: center;
 
-	@include transition(opacity, .3s);
+	@include transition(opacity, $transition-duration-alt);
 
 	&__table {
 		display: table;
@@ -34,7 +34,7 @@
 
 		opacity: 0;
 		transform: translateY(-40px);
-		@include transition((opacity, transform), .8s, $delay: .3s);
+		@include transition((opacity, transform), .5s, $delay: $transition-duration-alt);
 	}
 
 	&.lightbox--block {

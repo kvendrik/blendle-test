@@ -1,3 +1,5 @@
+var utils = require('./utils');
+
 module.exports = {
 
 	init: function(){
@@ -25,22 +27,12 @@ module.exports = {
 	},
 
 	_openLightbox: function(src){
-		var lightbox = this._lightbox;
-
 		this._lightboxImg.src = src;
-
-		lightbox.classList.add('lightbox--block');
-		setTimeout(function(){
-			lightbox.classList.add('lightbox--visible');
-		}, 50);
+		utils.addVisibleClasses(this._lightbox, 'lightbox');
 	},
 
 	_closeLightbox: function(){
-		var lightbox = this._lightbox;
-		lightbox.classList.remove('lightbox--visible');
-		setTimeout(function(){
-			lightbox.classList.remove('lightbox--block');
-		}, 300);
+		utils.removeVisibleClasses(this._lightbox, 'lightbox');
 	}
 	
 };

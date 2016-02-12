@@ -17,7 +17,7 @@
 
 	transform: translateY(10vh);
 
-	@include transition((opacity, transform), .3s);
+	@include transition((opacity, transform), $transition-duration-alt);
 
 	.article-view--visible & {
 		opacity: 1;
@@ -32,7 +32,7 @@
 	right: 0;
 	z-index: 2;
 
-	@include transition(opacity, .3s);
+	@include transition(opacity, $transition-duration-alt);
 
 	.article-view--visible & {
 		opacity: 1;

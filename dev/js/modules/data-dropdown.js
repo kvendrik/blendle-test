@@ -1,3 +1,5 @@
+var utils = require('./utils');
+
 module.exports = {
     
     init: function(){
@@ -37,7 +39,11 @@ module.exports = {
     	el = document.querySelector('[data-dropdown="'+id+'"]');
     	if(!el) return;
 
-    	el.classList.toggle('dropdown--visible');
+    	if(el.classList.contains('dropdown--visible')){
+    		utils.removeVisibleClasses(el, 'dropdown');
+    	} else {
+    		utils.addVisibleClasses(el, 'dropdown');
+    	}
     }
     
 };

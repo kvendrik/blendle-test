@@ -7,8 +7,17 @@
 
 	display: none;
 
-	&.dropdown--visible {
+	opacity: 0;
+	transform: translateY(-10px);
+	@include transition((opacity, transform), $transition-duration-alt);
+
+	&.dropdown--block {
 		display: block;
+	}
+
+	&.dropdown--visible {
+		opacity: 1;
+		transform: translateY(0px);
 	}
 
 	li {

@@ -1,7 +1,9 @@
+var utils = require('./utils');
+
 module.exports = {
 	
 	init: function(){
-		this._articleViewTransDur = this._getTransitionDurationInMilliSec();
+		this._articleView = document.getElementById('js-article-view');
 		this._bindEvents();
 		this._checkHash();
 	},
@@ -54,25 +56,12 @@ module.exports = {
 		}
 	},
 
-	_getTransitionDurationInMilliSec: function(){
-		var articleView = document.getElementById('js-article-view'),
-			cssStr = getComputedStyle(articleView).getPropertyValue('transition-duration'),
-			number = Number(cssStr.replace('s', ''));
-		return number*1000;
-	},
-
-	_openView: function(slug){
-		document.body.classList.add('article-view--block');
-		setTimeout(function(){
-			document.body.classList.add('article-view--visible');
-		}, 50);
+	_openView: function(){
+		utils.addVisibleClasses(document.body, 'article-view');
 	},
 
 	_closeView: function(){
-		document.body.classList.remove('article-view--visible');
-		setTimeout(function(){
-			document.body.classList.remove('article-view--block');
-		}, this._articleViewTransDur);
+		utils.removeVisibleClasses(document.body, 'article-view', this._articleView);
 	}
 
 };
