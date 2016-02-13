@@ -24,3 +24,8 @@
 		display: none !important;
 	}
 }
+@include screen-sm-max {
+	.text-left-sm-max {
+		text-align: left;
+	}
+}

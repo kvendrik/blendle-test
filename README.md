@@ -5,7 +5,7 @@ For the sake of the demo en het sharen op social media staan alle meta tags afge
 
 ##### Todo Notes
 * [x] Share buttons at bottom of article
-* [] scroll to link on Blendle icon in masthead
+* [x] scroll to link on Blendle icon in masthead
 * [] "Lees later" button in masthead en dropdowns
 * [] Revu logo -> rood
 * [] Images compressen en resizen (srcset gebruiken?)
