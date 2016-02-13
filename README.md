@@ -9,7 +9,7 @@ For the sake of the demo en het sharen op social media staan alle meta tags afge
 * [x] "Lees later" button in masthead en dropdowns
 * [x] Revu logo -> rood
 * [x] Images compressen en resizen (srcset gebruiken?)
-* [ ] Check SVG Inline
-* [] Profile-previews linken
-* [] Browser Test (IE9+, Android 4+, iOS 6+)
+* [x] Profile-previews linken
+* [x] Browser Test (IE9+, Android 4.3+, iOS 6+)
+* [x] Check SVG Inline
 * [] Performance Test

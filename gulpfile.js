@@ -6,6 +6,7 @@ var gulp = require('gulp'),
     rename = require('gulp-rename'),
     gutil = require('gulp-util'),
     browserify = require('gulp-browserify'),
+    htmlmin = require('gulp-htmlmin'),
     uglify = require('gulp-uglify');
 
 var pkg = require('./package.json'),
@@ -52,6 +53,7 @@ gulp.task('watch', function(){
 gulp.task('ejs', function(){
     gulp.src(paths.ejs.src)
         .pipe(ejsLocals().on('error', gutil.log))
+        .pipe(htmlmin({ collapseWhitespace: true }))
         .pipe(gulp.dest(paths.ejs.destFolder))
         .pipe(connect.reload());
 });
