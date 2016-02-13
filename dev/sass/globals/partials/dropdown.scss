@@ -33,9 +33,18 @@
 
 		@include transition((color, background-color));
 
+		path, ellipse {
+			fill: $color-grey-light;
+			@include transition(fill);
+		}
+
 		&:hover {
 			background-color: $color-grey-lightest;
-			color: $color-base;
+			color: $color-base !important;
+
+			path, ellipse {
+				fill: $color-base;
+			}
 		}
 	}
 
