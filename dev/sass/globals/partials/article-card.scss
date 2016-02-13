@@ -2,8 +2,7 @@
 	width: 100%;
 	max-width: 372px;
 
-	margin: 0 auto;
-	margin-top: $spacing-l;
+	margin: $spacing-l auto;
 
 	&__info, &__preview {
 		background-color: $color-white;
@@ -30,7 +29,7 @@
 
 			&__tag-wrapper {
 				padding-bottom: $spacing-xs;
-				@include border(bottom, $color-base, 2px);
+				@include border(bottom, $color-grey, 2px);
 			}
 		}
 
@@ -43,6 +42,7 @@
 				font-size: $size-xs;
 				font-style: normal;
 				line-height: $line-height-m;
+				color: $color-grey;
 			}
 
 			&__cite {

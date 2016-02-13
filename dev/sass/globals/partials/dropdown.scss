@@ -40,10 +40,10 @@
 
 		&:hover {
 			background-color: $color-grey-lightest;
-			color: $color-base !important;
+			color: $color-grey !important;
 
 			path, ellipse {
-				fill: $color-base;
+				fill: $color-grey;
 			}
 		}
 	}
@@ -72,6 +72,7 @@
 
 	&__footer {
 		font-size: $size-xxs;
+		color: $color-grey;
 		
 		padding: $spacing-m $spacing-m;
 		background-color: $color-grey-lightest-2;

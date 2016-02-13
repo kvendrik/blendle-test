@@ -1,8 +1,9 @@
 .tag {
 	font-size: .6em;
+	color: $color-grey;
 	padding: $spacing-xs $spacing-s;
 
-	@include border($color: $color-base);
+	@include border($color: $color-grey);
 	border-radius: $border-radius;
 
 	@include transition((background-color, color));
