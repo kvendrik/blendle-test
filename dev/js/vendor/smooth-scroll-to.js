@@ -7,13 +7,12 @@
 
     Source: https://coderwall.com/p/hujlhg/smooth-scrolling-without-jquery
     Modified by: Koen Vendrik <k.vendrik@gmail.com>
-    Change notes:
+    Changes notes:
+    * Removed Promise and theirby made it compatible with IE 9
+    * Added optional success and error callback arguments
     * Added module.exports for Browsify
-    * Changes for compatibility with IE 9
-        * Removed Promise
-        * Added optional success and error callback arguments
-        * Changes element.scrollTop to window.scrollTo
-        * Adds getScrollTop method to get scrollTop cross-browser
+    * Changes 'element.scrollTop =' to window.scrollTo
+    * Adds getScrollTop method to get scrollTop cross-browser
  */
 module.exports = function(target, duration, success, error) {
     target = Math.round(target);
@@ -25,19 +24,12 @@ module.exports = function(target, duration, success, error) {
         return;
     }
 
-    var start_time = Date.now(),
-        end_time = start_time + duration;
-
-    var start_top = getScrollTop(),
-        distance = target - start_top;
-
     var resolve = function(msg){
         if(typeof success === 'function'){
             success(msg);
         }
-    };
-    
-    var reject = function(msg){
+    },
+    reject = function(msg){
         if(typeof error === 'function'){
             error(msg);
         }
@@ -55,6 +47,12 @@ module.exports = function(target, duration, success, error) {
             return D.scrollTop;
         }
     };
+
+    var start_time = Date.now();
+    var end_time = start_time + duration;
+
+    var start_top = getScrollTop();
+    var distance = target - start_top;
 
     // based on http://en.wikipedia.org/wiki/Smoothstep
     var smooth_step = function(start, end, point){
@@ -76,10 +74,9 @@ module.exports = function(target, duration, success, error) {
         }
 
         // set the scrollTop for this frame
-        var now = Date.now(),
-            point = smooth_step(start_time, end_time, now),
-            frameTop = Math.round(start_top + (distance * point));
-
+        var now = Date.now();
+        var point = smooth_step(start_time, end_time, now);
+        var frameTop = Math.round(start_top + (distance * point));
         window.scrollTo(0, frameTop);
 
         // check if we're done!
@@ -91,11 +88,11 @@ module.exports = function(target, duration, success, error) {
         // If we were supposed to scroll but didn't, then we
         // probably hit the limit, so consider it done; not
         // interrupted.
-        if(getScrollTop() === previous_top && getScrollTop() !== frameTop) {
+        if(getScrollTop() === previous_top
+            && getScrollTop() !== frameTop) {
             resolve();
             return;
         }
-
         previous_top = getScrollTop();
 
         // schedule next frame for execution
