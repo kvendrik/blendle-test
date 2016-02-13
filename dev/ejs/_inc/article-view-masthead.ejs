@@ -9,10 +9,11 @@
 	</div>
 	<div class="masthead__overlay">
 		<div class="masthead__action-buttons">
-			<a class="masthead__btn" id="js-article-view-close-btn">
+			<a class="masthead__btn"
+			   id="js-article-view-close-btn">
 				<% include icons/cross.svg %>
 			</a>
-			<a class="masthead__btn">
+			<a class="masthead__btn pin-btn" data-toggle="pin-btn--active">
 				<% include icons/pin.svg %>
 			</a>
 			<a class="masthead__btn masthead__btn--svg-correction hidden-sm-max"
@@ -60,7 +61,7 @@
 	<div class="dropdown" data-dropdown="article-view-masthead-dropdown">
 		<ul class="list--clean">
 			<li>
-				<a>
+				<a class="pin-btn" data-toggle="pin-btn--active">
 					<span class="list__item__icon">
 						<% include icons/pin.svg %>
 					</span>

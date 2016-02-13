@@ -28,3 +28,41 @@
 		fill: $color-white;
 	}
 }
+
+.pin-btn {
+	display: inline-block;
+
+	path {
+		@include transition(fill);
+	}
+
+	&.pin-btn--active {
+		svg {
+			animation: scale-and-bounce .4s ease;
+			animation-fill-mode: forwards;
+		}
+
+		&:hover path {
+			fill: $color-accent-alt-2;
+		}
+
+		path {
+			fill: $color-accent-alt-2;
+		}
+	}
+}
+
+@keyframes scale-and-bounce {
+	20% {
+		transform: scale(1.2);
+	}
+	50% {
+		transform: scale(1.2) rotate(-45deg);
+	}
+	80% {
+		transform: scale(0.9) rotate(-45deg);
+	}
+	100% {
+		transform: scale(1) rotate(-45deg);
+	}
+}
