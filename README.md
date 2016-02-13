@@ -7,8 +7,9 @@ For the sake of the demo en het sharen op social media staan alle meta tags afge
 * [x] Share buttons at bottom of article
 * [x] scroll to link on Blendle icon in masthead
 * [x] "Lees later" button in masthead en dropdowns
-* [] Revu logo -> rood
-* [] Images compressen en resizen (srcset gebruiken?)
+* [x] Revu logo -> rood
+* [x] Images compressen en resizen (srcset gebruiken?)
+* [ ] Check SVG Inline
 * [] Profile-previews linken
 * [] Browser Test (IE9+, Android 4+, iOS 6+)
 * [] Performance Test
