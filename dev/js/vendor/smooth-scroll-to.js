@@ -11,6 +11,8 @@
     * Removed Promise and theirby made it compatible with IE 9
     * Added optional success and error callback arguments
     * Added module.exports for Browsify
+    * Changes element.scrollTop to window.scrollTo
+    * Adds getScrollTop method to get scrollTop cross browser
  */
 module.exports = function(target, duration, success, error) {
     target = Math.round(target);
