@@ -20,5 +20,9 @@ body {
 
 	&.text-container--push-btm {
 		padding-bottom: $spacing-xxl;
+
+		@include screen-sm-max {
+			padding-bottom: $spacing-m;
+		}
 	}
 }

@@ -1,0 +1,30 @@
+.btn-social {
+	padding: $spacing-s $spacing-l;
+	margin-bottom: $spacing-s;
+	
+	background-color: $color-accent-alt;
+	border-radius: $border-radius;
+	
+	display: inline-block;
+	cursor: pointer;
+
+	@include transition(opacity);
+
+	&:hover {
+		opacity: .9;
+	}
+
+	@each $name, $color in $colors-social {
+		&.btn-social--#{$name} {
+			background-color: $color;
+		}
+	}
+
+	svg {
+		transform: scale(1.2);
+	}
+
+	path {
+		fill: $color-white;
+	}
+}

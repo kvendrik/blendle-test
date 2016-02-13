@@ -10,6 +10,10 @@ h1,h2,h3,h5,h6 {
     &.h--accent {
         color: $color-accent;
     }
+
+    &.h--normalize {
+        text-transform: none;
+    }
 }
 
 h1,.h1 {

@@ -5,6 +5,10 @@
 	float: right;
 }
 
+.text-center {
+	text-align: center;
+}
+
 @include screen-lg-max {
 	.hidden-lg-max {
 		display: none !important;
