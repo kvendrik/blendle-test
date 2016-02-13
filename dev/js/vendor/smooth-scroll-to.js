@@ -12,7 +12,7 @@
     Changes for compatibility with IE 9:
     * Removed Promise
     * Added optional success and error callback arguments
-    * Changes 'element.scrollTop =' to window.scrollTo
+    * Changes element.scrollTop = to window.scrollTo
     * Adds getScrollTop method to get scrollTop cross-browser
  */
 module.exports = function(target, duration, success, error) {
