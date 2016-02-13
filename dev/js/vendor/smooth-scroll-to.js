@@ -7,10 +7,11 @@
 
     Source: https://coderwall.com/p/hujlhg/smooth-scrolling-without-jquery
     Modified by: Koen Vendrik <k.vendrik@gmail.com>
-    Changes notes:
-    * Removed Promise and theirby made it compatible with IE 9
-    * Added optional success and error callback arguments
+    Change notes:
     * Added module.exports for Browsify
+    Changes for compatibility with IE 9:
+    * Removed Promise
+    * Added optional success and error callback arguments
     * Changes 'element.scrollTop =' to window.scrollTo
     * Adds getScrollTop method to get scrollTop cross-browser
  */
