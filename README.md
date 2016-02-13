@@ -12,4 +12,4 @@ For the sake of the demo en het sharen op social media staan alle meta tags afge
 * [x] Profile-previews linken
 * [x] Browser Test (IE9+, Android 4.3+, iOS 6+)
 * [x] Check SVG Inline
-* [] Performance Test
+* [x] Performance Test
