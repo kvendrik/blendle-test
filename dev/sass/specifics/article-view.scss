@@ -47,7 +47,7 @@
 		text-align: left;
 		line-height: $line-height-m;
 
-		&:before {
+		&:before, &:after {
 			right: 0;
 			left: $spacing-m;
 		}

@@ -26,7 +26,7 @@
 		</div>
 		<div class="pull-right hidden-sm-max">
 			<a class="masthead__btn masthead__btn--blendle"
-			   href="http://blendle.com" title="Revu on Blendle">
+			   data-smooth-scroll="#article-view-footer-share-buttons">
 				<% include icons/blendle.svg %>
 			</a>
 			<a class="masthead__btn masthead__btn--twitter"
@@ -60,32 +60,40 @@
 	<div class="dropdown" data-dropdown="article-view-masthead-dropdown">
 		<ul class="list--clean">
 			<li>
-				<span class="list__item__icon">
-					<% include icons/pin.svg %>
-				</span>
-				Lees later
+				<a>
+					<span class="list__item__icon">
+						<% include icons/pin.svg %>
+					</span>
+					Lees later
+				</a>
 			</li>
-			<li href="mailto:?subject=Lees dit artikel uit Revu&body=Lees dit artikel uit Revu: ADE: Roadtrippen met Amsterdam's Finest http://kvendrik.github.io/blendle-test">
-				<span class="list__item__icon">
-					<% include icons/email.svg %>
-				</span>
-				E-mail naar een vriend
+			<li>
+				<a href="mailto:?subject=Lees dit artikel uit Revu&body=Lees dit artikel uit Revu: ADE: Roadtrippen met Amsterdam's Finest http://kvendrik.github.io/blendle-test">
+					<span class="list__item__icon">
+						<% include icons/email.svg %>
+					</span>
+					E-mail naar een vriend
+				</a>
 			</li>
-			<li data-share="facebook"
-				data-share-desc="Lees dit artikel uit Revu: ADE: Roadtrippen met Amsterdam's Finest"
-				data-share-url="http://kvendrik.github.io/blendle-test">
-				<span class="list__item__icon">
-					<% include icons/fb.svg %>
-				</span>
-				Deel via Facebook
+			<li>
+				<a data-share="facebook"
+				   data-share-desc="Lees dit artikel uit Revu: ADE: Roadtrippen met Amsterdam's Finest"
+				   data-share-url="http://kvendrik.github.io/blendle-test">
+					<span class="list__item__icon">
+						<% include icons/fb.svg %>
+					</span>
+					Deel via Facebook
+				</a>
 			</li>
-			<li data-share="twitter"
-				data-share-desc="Lees dit artikel uit Revu: ADE: Roadtrippen met Amsterdam's Finest"
-				data-share-url="http://kvendrik.github.io/blendle-test">
-				<span class="list__item__icon">
-					<% include icons/twitter.svg %>
-				</span>
-				Deel via Twitter
+			<li>
+				<a data-share="twitter"
+				   data-share-desc="Lees dit artikel uit Revu: ADE: Roadtrippen met Amsterdam's Finest"
+				   data-share-url="http://kvendrik.github.io/blendle-test">
+					<span class="list__item__icon">
+						<% include icons/twitter.svg %>
+					</span>
+					Deel via Twitter
+				</a>
 			</li>
 		</ul>
 		<footer class="dropdown__footer">
