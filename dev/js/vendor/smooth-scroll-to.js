@@ -12,13 +12,13 @@
     * Added optional success and error callback arguments
     * Added module.exports for Browsify
  */
-module.exports = function(element, target, duration, success, error) {
+module.exports = function(target, duration, success, error) {
     target = Math.round(target);
     duration = Math.round(duration);
 
     if(duration < 0) return;
     if(duration === 0) {
-        element.scrollTop = target;
+        window.scrollTo(0, target);
         return;
     }
 
@@ -33,10 +33,23 @@ module.exports = function(element, target, duration, success, error) {
         }
     };
 
+    var getScrollTop = function(){
+        if(typeof pageYOffset!= 'undefined'){
+            //most browsers except IE before #9
+            return pageYOffset;
+        }
+        else{
+            var B= document.body; //IE 'quirks'
+            var D= document.documentElement; //IE with doctype
+            D= (D.clientHeight)? D: B;
+            return D.scrollTop;
+        }
+    };
+
     var start_time = Date.now();
     var end_time = start_time + duration;
 
-    var start_top = element.scrollTop;
+    var start_top = getScrollTop();
     var distance = target - start_top;
 
     // based on http://en.wikipedia.org/wiki/Smoothstep
@@ -49,11 +62,11 @@ module.exports = function(element, target, duration, success, error) {
 
     // This is to keep track of where the element's scrollTop is
     // supposed to be, based on what we're doing
-    var previous_top = element.scrollTop;
+    var previous_top = getScrollTop();
 
     // This is like a think function from a game loop
     var scroll_frame = function() {
-        if(element.scrollTop != previous_top){
+        if(getScrollTop() != previous_top){
             reject("interrupted");
             return;
         }
@@ -62,7 +75,7 @@ module.exports = function(element, target, duration, success, error) {
         var now = Date.now();
         var point = smooth_step(start_time, end_time, now);
         var frameTop = Math.round(start_top + (distance * point));
-        element.scrollTop = frameTop;
+        window.scrollTo(0, frameTop);
 
         // check if we're done!
         if(now >= end_time) {
@@ -73,12 +86,12 @@ module.exports = function(element, target, duration, success, error) {
         // If we were supposed to scroll but didn't, then we
         // probably hit the limit, so consider it done; not
         // interrupted.
-        if(element.scrollTop === previous_top
-            && element.scrollTop !== frameTop) {
+        if(getScrollTop() === previous_top
+            && getScrollTop() !== frameTop) {
             resolve();
             return;
         }
-        previous_top = element.scrollTop;
+        previous_top = getScrollTop();
 
         // schedule next frame for execution
         setTimeout(scroll_frame, 0);

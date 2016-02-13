@@ -23,7 +23,7 @@ module.exports = {
 		if(!el) return;
 
 		var offsetTop = el.offsetTop;
-		smoothScrollTo(document.body, offsetTop, duration);
+		smoothScrollTo(offsetTop, duration);
 	}
 
 };
