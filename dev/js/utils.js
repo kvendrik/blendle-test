@@ -1,4 +1,4 @@
-module.exports = {
+var utils = {
 
 	_getTransitionDurationInMilliSec: function(el){
 		var cssStr = getComputedStyle(el).getPropertyValue('transition-duration'),
@@ -23,3 +23,15 @@ module.exports = {
 	}
 	
 };
+
+utils.historyPush = (function(){
+	if(history && history.pushState){
+		return function(state, title, url){
+			history.pushState(state, title, url);
+		};
+	} else {
+		return function(){};
+	}
+}());
+
+module.exports = utils;

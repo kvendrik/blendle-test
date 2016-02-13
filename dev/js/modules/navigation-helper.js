@@ -16,14 +16,14 @@ module.exports = {
 
 		var onTriggerClick = function(){
 			var slug = this.getAttribute('data-article-open');
-			history.pushState({
+			utils.historyPush({
 				slug: slug
 			}, null, self._urlBase+'#/article/'+slug);
 			self._openView();
 		};
 
 		var onCloseBtnClick = function(){
-			history.pushState({}, null, self._urlBase);
+			utils.historyPush({}, null, self._urlBase);
 			self._closeView();
 		};
 
