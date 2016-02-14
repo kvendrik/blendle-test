@@ -37,10 +37,7 @@ module.exports = {
 	},
 
 	_checkHash: function(){
-		var hash = location.hash;
-
-		if(hash){
-			var slug = hash.replace(this._urlBase+'#/article/', '');
+		if(location.hash){
 			this._openView();
 		}
 	},
@@ -48,7 +45,11 @@ module.exports = {
 	_handlePopstate: function(e){
 		var state = e.state;
 
-		if(state && state.slug){
+		//if there is no state object
+		//it is probably because its on page load
+		if(!state) return;
+
+		if(state.slug){
 			//is an article
 			this._openView();
 		} else {

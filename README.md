@@ -17,6 +17,6 @@ For the sake of the demo en het sharen op social media staan alle meta tags afge
 * [x] Performance Test
 * [x] Firefox Check
 * [x] Compress Logo
-* [ ] Fix Android 4 bugs
-* [ ] On load open article view bug fix (iOS & Android)
+* [x] Fix Android 4 bugs
+* [x] On load open article view bug fix (iOS & Android)
 * [ ] Final design check
