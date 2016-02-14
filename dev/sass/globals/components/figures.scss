@@ -10,11 +10,13 @@ figure {
 	}
 
 	figcaption {
-		max-width: 120px;
 		text-align: right;
 		float: right;
 
+		font-family: $family-fifth;
+		font-weight: $weight-fifth;
 		font-size: $size-xxs;
+
 		color: $color-grey-light;
 		line-height: $line-height-s;
 	}

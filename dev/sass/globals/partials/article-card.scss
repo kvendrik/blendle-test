@@ -110,5 +110,15 @@
 			height: 200px;
 			margin-bottom: $spacing-m;
 		}
+
+		.article-head {
+			&__sub-title, .p--intro {
+				font-size: 1.14em;
+			}
+
+			&__title {
+				font-size: 2.38em;
+			}
+		}
 	}
 }
