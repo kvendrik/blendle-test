@@ -9,6 +9,10 @@ body {
 	color: $color-base;
 	line-height: $line-height-m;
 	background-color: $color-grey-lightest;
+
+	@include screen-sm-max {
+		font-size: $size-m-sm;
+	}
 }
 
 .text-container {
