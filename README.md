@@ -3,7 +3,7 @@ Blendle Test
 
 For the sake of the demo en het sharen op social media staan alle meta tags afgesteld op het ene artikel dat erop staat. Verder is alles schaalbaar opgebouwd. Door bijvoorbeeld Handlebars toe te voegen zou je er heel makkelijk voor kunnen zorgen dat er meedere article cards kunnen worden ingeladen welke hun eigen artikel openen in de article view wanneer je erop klikt.
 
-**Browser support (tested):** IE9+, Android 4+, iOS 6+
+**Browser support (tested):** IE9+, Android 4+, iOS 7.1+
 
 ##### Todo Notes
 * [x] Share buttons at bottom of article
@@ -12,7 +12,7 @@ For the sake of the demo en het sharen op social media staan alle meta tags afge
 * [x] Revu logo -> rood
 * [x] Images compressen en resizen (srcset gebruiken?)
 * [x] Profile-previews linken
-* [x] Browser Test (IE9+, Android 4.3+, iOS 6+)
+* [x] Browser Test (IE9+, Android 4+, iOS 7.1+)
 * [x] Check SVG Inline
 * [x] Performance Test
 * [x] Firefox Check
