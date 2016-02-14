@@ -3,7 +3,7 @@ Blendle Test
 
 For the sake of the demo en het sharen op social media staan alle meta tags afgesteld op het ene artikel dat erop staat. Verder is alles schaalbaar opgebouwd. Door bijvoorbeeld Handlebars toe te voegen zou je er heel makkelijk voor kunnen zorgen dat er meedere article cards worden ingeladen welke hun eigen artikel openen in de article view wanneer je erop klikt.
 
-**Browser support:** IE9+, Android 4+, iOS 6+
+**Browser support (tested):** IE9+, Android 4+, iOS 6+
 
 ##### Todo Notes
 * [x] Share buttons at bottom of article
@@ -17,5 +17,6 @@ For the sake of the demo en het sharen op social media staan alle meta tags afge
 * [x] Performance Test
 * [x] Firefox Check
 * [x] Compress Logo
+* [ ] Fix Android 4 bugs
 * [ ] On load open article view bug fix (iOS & Android)
 * [ ] Final design check
