@@ -1,7 +1,7 @@
 Blendle Test
 ============
 
-For the sake of the demo en het sharen op social media staan alle meta tags afgesteld op het ene artikel dat erop staat. Verder is alles schaalbaar opgebouwd. Door bijvoorbeeld Handlebars toe te voegen zou je er heel makkelijk voor kunnen zorgen dat er meedere article cards worden ingeladen welke hun eigen artikel openen in de article view wanneer je erop klikt.
+For the sake of the demo en het sharen op social media staan alle meta tags afgesteld op het ene artikel dat erop staat. Verder is alles schaalbaar opgebouwd. Door bijvoorbeeld Handlebars toe te voegen zou je er heel makkelijk voor kunnen zorgen dat er meedere article cards kunnen worden ingeladen welke hun eigen artikel openen in de article view wanneer je erop klikt.
 
 **Browser support (tested):** IE9+, Android 4+, iOS 6+
 
