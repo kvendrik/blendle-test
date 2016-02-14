@@ -74,6 +74,10 @@ a {
 
 small {
     font-size: $size-xs;
+
+    &.small--alt {
+        font-size: $size-xs-2;        
+    }
 }
 
 strong, b {
