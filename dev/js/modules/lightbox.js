@@ -15,7 +15,7 @@ module.exports = {
 			self._closeLightbox();
 		});
 
-		utils.onClick(document, function(e){
+		utils.onClick(document.body, function(e){
 			var target = e.target,
 				src;
 

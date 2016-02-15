@@ -22,6 +22,6 @@ For the sake of the demo en het sharen op social media staan alle meta tags afge
 * [x] Final design check
 * [x] Move add click event listeners to utils
 * [x] Replace `addEventListener` for clicks with `FastButton`
-* [ ] A/B test FastButton
+* [x] A/B test FastButton
+* [x] Final Design Check
 * [ ] Final Browser & Perf Check
-* [ ] Final Design Check

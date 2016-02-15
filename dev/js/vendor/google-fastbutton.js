@@ -20,7 +20,7 @@ FastButton.prototype.handleEvent = function(e){
 };
 
 FastButton.prototype.onTouchStart = function(e){
-  e.stopPropagation();
+  //e.stopPropagation();
 
   this.element.addEventListener('touchend', this, false);
   this.element.addEventListener('touchmove', this, false);
