@@ -25,4 +25,4 @@ For the sake of the demo en het sharen op social media staan alle meta tags afge
 * [x] A/B test FastButton
 * [x] Final Design Check
 * [x] Fix smooth scroll for iOS 9 (iPhone 6) 
-* [ ] Final Browser & Perf Check
+* [x] Final Browser & Perf Check
