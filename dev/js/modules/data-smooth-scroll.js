@@ -1,4 +1,5 @@
-var smoothScrollTo = require('../vendor/smooth-scroll-to');
+var utils = require('../utils'),
+	smoothScrollTo = require('../vendor/smooth-scroll-to');
 
 module.exports = {
 
@@ -11,7 +12,7 @@ module.exports = {
 			triggers = document.querySelectorAll('[data-smooth-scroll]');
 
 		[].forEach.call(triggers, function(el){
-			el.addEventListener('click', self._handleTriggerClick, false);
+			utils.onClick(el, self._handleTriggerClick);
 		});
 	},
 

@@ -20,3 +20,6 @@ For the sake of the demo en het sharen op social media staan alle meta tags afge
 * [x] Fix Android 4 bugs
 * [x] On load open article view bug fix (iOS & Android)
 * [x] Final design check
+* [x] Move add click event listeners to utils
+* [ ] Replace `addEventListener` for clicks with `FastButton` and A/B test
+* [ ] Final Design Check

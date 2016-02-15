@@ -1,4 +1,10 @@
+var FastButton = require('./vendor/google-fastbutton');
+
 var utils = {
+
+	onClick: function(el, callback){
+		new FastButton(el, callback);
+	},
 
 	addVisibleClasses: function(el, prefix){
 		el.classList.add(prefix+'--block');

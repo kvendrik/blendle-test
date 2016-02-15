@@ -28,10 +28,10 @@ module.exports = {
 		};
 
 		[].forEach.call(triggers, function(el){
-			el.addEventListener('click', onTriggerClick, false);
+			utils.onClick(el, onTriggerClick);
 		});
 
-		closeBtn.addEventListener('click', onCloseBtnClick, false);
+		utils.onClick(closeBtn, onCloseBtnClick);
 
 		window.addEventListener('popstate', this._handlePopstate.bind(self), false);
 	},
