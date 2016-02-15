@@ -1,3 +1,5 @@
+var utils = require('../utils');
+
 module.exports = {
 
 	init: function(){
@@ -8,8 +10,8 @@ module.exports = {
 		var self = this,
 			triggers = document.querySelectorAll('[data-share]');
 		
-		[].forEach.call(triggers, function(el){
-			el.addEventListener('click', self._handleShareClick, false);
+		utils.each(triggers, function(el){
+			utils.onClick(el, self._handleShareClick);
 		});
 	},
 

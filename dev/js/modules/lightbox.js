@@ -11,11 +11,11 @@ module.exports = {
 	_bindEvents: function(){
 		var self = this;
 
-		this._lightbox.addEventListener('click', function(){
+		utils.onClick(this._lightbox, function(){
 			self._closeLightbox();
-		}, false);
+		});
 
-		document.addEventListener('click', function(e){
+		utils.onClick(document.body, function(e){
 			var target = e.target,
 				src;
 
@@ -23,7 +23,7 @@ module.exports = {
 				src = target.getAttribute('data-lightbox-open');
 				self._openLightbox(src);
 			}
-		}, false);
+		});
 	},
 
 	_openLightbox: function(src){

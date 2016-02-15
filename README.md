@@ -20,4 +20,9 @@ For the sake of the demo en het sharen op social media staan alle meta tags afge
 * [x] Fix Android 4 bugs
 * [x] On load open article view bug fix (iOS & Android)
 * [x] Final design check
+* [x] Move add click event listeners to utils
+* [x] Replace `addEventListener` for clicks with `FastButton`
+* [x] A/B test FastButton
+* [x] Final Design Check
 * [ ] Fix smooth scroll for iOS 9 (iPhone 6) 
+* [ ] Final Browser & Perf Check

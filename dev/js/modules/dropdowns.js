@@ -11,20 +11,20 @@ module.exports = {
     		dropdowns = document.querySelectorAll('[data-dropdown]'),
     		dropdownTriggers = document.querySelectorAll('[data-dropdown-trigger]');
 
-      	document.body.addEventListener('click', function(){
-      		[].forEach.call(dropdowns, function(el){
+      	utils.onClick(document.body, function(){
+      		utils.each(dropdowns, function(el){
       			utils.removeVisibleClasses(el, 'dropdown');
       		});
-      	}, false);
+      	});
 
-      	[].forEach.call(dropdowns, function(el){
-  			el.addEventListener('click', function(e){
+      	utils.each(dropdowns, function(el){
+  			utils.onClick(el, function(e){
         		e.stopPropagation();
-      		}, false);
+      		});
   		});
       
-      	[].forEach.call(dropdownTriggers, function(el){
-      		el.addEventListener('click', self._handleTriggerClick);
+      	utils.each(dropdownTriggers, function(el){
+      		utils.onClick(el, self._handleTriggerClick);
       	});
     },
     
