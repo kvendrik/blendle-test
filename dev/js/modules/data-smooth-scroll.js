@@ -1,5 +1,5 @@
 var utils = require('../utils'),
-	smoothScrollTo = require('../vendor/smooth-scroll-to');
+	smoothScroll = require('../vendor/smoothscroll.min.js');
 
 module.exports = {
 
@@ -22,9 +22,7 @@ module.exports = {
 			el = document.querySelector(selector);
 
 		if(!el) return;
-
-		var offsetTop = el.offsetTop;
-		smoothScrollTo(offsetTop, duration);
+		smoothScroll(el, duration);
 	}
 
 };
