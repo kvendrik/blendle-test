@@ -4,15 +4,10 @@ var FastButton = function(element, handler){
   this.handler = handler;
 
   if("ontouchstart" in window){
-
     element.addEventListener('touchstart', this, false);
-
   } else {
-  
     element.addEventListener('click', this, false);
-
   }
-
 };
 
 FastButton.prototype.handleEvent = function(e){
@@ -25,7 +20,6 @@ FastButton.prototype.handleEvent = function(e){
 };
 
 FastButton.prototype.onTouchStart = function(e){
-
   e.stopPropagation();
 
   this.element.addEventListener('touchend', this, false);
@@ -33,7 +27,6 @@ FastButton.prototype.onTouchStart = function(e){
 
   this.startX = e.touches[0].clientX;
   this.startY = e.touches[0].clientY;
-
 };
 
 FastButton.prototype.onTouchMove = function(e){
@@ -44,27 +37,21 @@ FastButton.prototype.onTouchMove = function(e){
 };
 
 FastButton.prototype.onClick = function(e){
-
-  e.stopPropagation();
+  //e.stopPropagation();
   
   this.reset();
 
   var handler = this.handler;
 
   if(typeof handler === 'function'){
-
     handler.call(this.element, e);
-
   } else if(typeof handler === 'object'){
-
     handler.handleEvent(e);
-  
   }
 
   if(e.type === 'touchend'){
     this.clickbuster.preventGhostClick(this.startX, this.startY);
   }
-
 }
 
 FastButton.prototype.reset = function(){

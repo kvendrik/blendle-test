@@ -21,5 +21,7 @@ For the sake of the demo en het sharen op social media staan alle meta tags afge
 * [x] On load open article view bug fix (iOS & Android)
 * [x] Final design check
 * [x] Move add click event listeners to utils
-* [ ] Replace `addEventListener` for clicks with `FastButton` and A/B test
+* [x] Replace `addEventListener` for clicks with `FastButton`
+* [ ] A/B test FastButton
+* [ ] Final Browser & Perf Check
 * [ ] Final Design Check
