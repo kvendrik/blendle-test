@@ -20,3 +20,4 @@ For the sake of the demo en het sharen op social media staan alle meta tags afge
 * [x] Fix Android 4 bugs
 * [x] On load open article view bug fix (iOS & Android)
 * [x] Final design check
+* [ ] Fix smooth scroll for iOS 9 (iPhone 6) 
