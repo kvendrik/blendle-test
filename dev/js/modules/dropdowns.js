@@ -12,18 +12,18 @@ module.exports = {
     		dropdownTriggers = document.querySelectorAll('[data-dropdown-trigger]');
 
       	utils.onClick(document.body, function(){
-      		[].forEach.call(dropdowns, function(el){
+      		utils.each(dropdowns, function(el){
       			utils.removeVisibleClasses(el, 'dropdown');
       		});
       	});
 
-      	[].forEach.call(dropdowns, function(el){
+      	utils.each(dropdowns, function(el){
   			utils.onClick(el, function(e){
         		e.stopPropagation();
       		});
   		});
       
-      	[].forEach.call(dropdownTriggers, function(el){
+      	utils.each(dropdownTriggers, function(el){
       		utils.onClick(el, self._handleTriggerClick);
       	});
     },

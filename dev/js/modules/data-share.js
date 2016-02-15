@@ -10,7 +10,7 @@ module.exports = {
 		var self = this,
 			triggers = document.querySelectorAll('[data-share]');
 		
-		[].forEach.call(triggers, function(el){
+		utils.each(triggers, function(el){
 			utils.onClick(el, self._handleShareClick);
 		});
 	},

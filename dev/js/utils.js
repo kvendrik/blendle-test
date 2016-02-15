@@ -2,6 +2,12 @@ var FastButton = require('./vendor/google-fastbutton');
 
 var utils = {
 
+	each: function(els, callback){
+		for(var i = 0, l = els.length; i < l; i++){
+			callback(els[i]);
+		}
+	},
+
 	onClick: function(el, callback){
 		new FastButton(el, callback);
 	},

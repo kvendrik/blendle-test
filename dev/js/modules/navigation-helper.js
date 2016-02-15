@@ -27,7 +27,7 @@ module.exports = {
 			self._closeView();
 		};
 
-		[].forEach.call(triggers, function(el){
+		utils.each(triggers, function(el){
 			utils.onClick(el, onTriggerClick);
 		});
 
